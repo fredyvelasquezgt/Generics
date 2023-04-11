@@ -15,3 +15,8 @@ function booleanIdentity(item: boolean):boolean {
 function identity(item: any):any {
   return item;
 }
+
+interface Cat {
+  name:string;
+  breed:string;
+}
