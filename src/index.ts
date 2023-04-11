@@ -40,3 +40,13 @@ console.log(getRandomElement<string>(["a","b", "c"]));
 getRandomElement<number>([1,2,3,4,2121,32])
 
 getRandomElement([1,4,2,4,2])
+
+//esta funcion recibe dos objetos que pueden ir armados de cualquier tipo
+function merge<T,U>(object1:T, object2:U) {
+  return {
+    ...object1,
+    ...object2
+  }
+}
+
+const comboObj =  merge({name:'fredy'}, {pets: ['blue', 'elton']});
