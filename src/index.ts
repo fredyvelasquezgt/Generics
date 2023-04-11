@@ -20,3 +20,8 @@ interface Cat {
   name:string;
   breed:string;
 }
+
+//esta es una version generica que recibe un tipo y devuelve algo de ese mismo tipo
+function identity<Type>(item: T): T {
+  return item;
+}
