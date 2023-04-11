@@ -25,3 +25,7 @@ interface Cat {
 function identity<Type>(item: T): T {
   return item;
 }
+
+identity<number>(7);
+identity<string>("hello");
+identity<Cat>({})
