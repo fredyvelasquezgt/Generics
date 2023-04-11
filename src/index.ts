@@ -38,3 +38,5 @@ function getRandomElement<T>(list: T[]):T {
 
 console.log(getRandomElement<string>(["a","b", "c"]));
 getRandomElement<number>([1,2,3,4,2121,32])
+
+getRandomElement([1,4,2,4,2])
