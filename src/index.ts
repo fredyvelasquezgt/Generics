@@ -29,3 +29,9 @@ function identity<Type>(item: T): T {
 identity<number>(7);
 identity<string>("hello");
 identity<Cat>({})
+
+//ahora trabajo con un array
+function getRandomElement<T>(list: T[]):T {
+  const randIdx = Math.floor(Math.random() * list.length);
+  return list[randIdx];
+}
