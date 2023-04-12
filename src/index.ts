@@ -51,3 +51,11 @@ function merge<T extends  object ,U extends object>(object1:T, object2:U) {
 }
 
 const comboObj =  merge({name:'fredy'}, {pets: ['blue', 'elton']});
+
+interface Lengthy {
+  length:number;
+}
+
+function printDoubleLenght<T> (thing: T): number {
+  return thing.length * 2
+}
