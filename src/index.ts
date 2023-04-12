@@ -66,3 +66,10 @@ function printDoubleLenght(thing: Lengthy): number {
 
 printDoubleLenght("asdfsd")
 //printDoubleLenght(123)
+
+function makeEmptyArray<T = number>(): T[] {
+  return[]
+}
+
+const nums = makeEmptyArray();
+const bools = makeEmptyArray<boolean>()
