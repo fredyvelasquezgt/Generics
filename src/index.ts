@@ -59,3 +59,10 @@ interface Lengthy {
 function printDoubleLenght<T> (thing: T): number {
   return thing.length * 2
 }
+
+function printDoubleLenght(thing: Lengthy): number {
+  return thing.length * 2
+}
+
+printDoubleLenght("asdfsd")
+//printDoubleLenght(123)
